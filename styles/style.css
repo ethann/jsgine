@@ -1,0 +1,59 @@
+/*
+	Game:
+	
+	z-index:
+		0 - bg
+
+	~creatures 
+		50-999 - monsters
+		50-999 - orbs / levitates
+	
+	~misc 
+		1000 - building
+		1001 - stats[money & lifes]
+		1019 - orbs / flying to stats
+		1020 - effects
+		1021 - score
+		2000 - FPS
+		
+	gameover/start
+		5000
+		
+	cursor
+		10000
+		
+	
+	
+@import url('game.css');
+@import url('statsbar.css');
+*/
+
+
+* {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+
+body {
+	background-image:url('../img/bg.gif');
+	margin:0;
+	font-size:14px;
+	font-family: georgia;
+}
+
+div.Site {
+	position:relative;
+	width:400px;
+	margin:30px auto;
+}
+
+div.GameBox {
+	width:400px; height:600px;
+	box-shadow:0 0 0 15px rgba(255, 255, 255, 0.3);
+	line-height:0;
+}
+
+canvas#GameArea {
+	cursor:default;
+}
